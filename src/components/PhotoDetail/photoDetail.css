@@ -1,0 +1,63 @@
+.modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100% - 40px);
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal {
+    width: 100%;
+    height: fit-content;
+    max-width: 600px;
+    background-color: #a4d1c8;
+    border: 5px;
+    box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal .prev {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: #a4d1c8;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url("./images/chevron-left-solid.svg");
+    mask-image: url("./images/chevron-left-solid.svg");
+}
+
+.modal .next {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    background-color: #a4d1c8;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url("./images/chevron-right-solid.svg");
+    mask-image: url("./images/chevron-right-solid.svg");
+}
+
+.modal .close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    right: 25%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #a4d1c8;
+    -webkit-mask-image: url("./images/times-solid.svg");
+    mask-image: url("./images/times-solid.svg");
+}
